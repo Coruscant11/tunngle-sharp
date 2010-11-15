@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace tunngle_sharp
+namespace TunngleSharp
 {
     public class Interop
     {
