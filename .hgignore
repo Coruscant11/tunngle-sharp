@@ -1,0 +1,3 @@
+glob:*.suo
+glob:tunngle-sharp/bin/*
+glob:tunngle-sharp/obj/*
