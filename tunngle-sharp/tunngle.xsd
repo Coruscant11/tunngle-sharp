@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="Export">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Total" type="xs:string" minOccurs="0" />
+        <xs:element name="Stats" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Networks" type="xs:string" minOccurs="0" />
+              <xs:element name="ActiveNetworks" type="xs:string" minOccurs="0" />
+              <xs:element name="Accounts" type="xs:string" minOccurs="0" />
+              <xs:element name="Online" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Network" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" type="xs:string" minOccurs="0" />
+              <xs:element name="NetworkName" type="xs:string" minOccurs="0" />
+              <xs:element name="UserCount" type="xs:string" minOccurs="0" />
+              <xs:element name="UserMax" type="xs:string" minOccurs="0" />
+              <xs:element name="Abstract" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Export" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

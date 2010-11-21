@@ -1,3 +1,5 @@
 glob:*.suo
 glob:tunngle-sharp/bin/*
 glob:tunngle-sharp/obj/*
+glob:TunngleSharp.Test/bin/*
+glob:TunngleSharp.Test/obj/*

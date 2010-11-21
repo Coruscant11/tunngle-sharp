@@ -10,7 +10,7 @@ namespace TunngleSharp
     {
         private static object lockObj = new object();
         private static string InitProject;
-        
+
         public static TunngleClient Instance { get; private set; }
 
         //Once per application
@@ -20,7 +20,7 @@ namespace TunngleSharp
             Interop.Init(project);
         }
 
-        public virtual TunngleClient GetInstance(string project)
+        public static TunngleClient GetInstance(string project)
         {
             if (project == InitProject || Instance == null)//project names match, or we've not initialized
                 if (Instance != null)//we've already initialized
